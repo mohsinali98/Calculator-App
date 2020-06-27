@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div>
+            <input class="screen" id="screen" type="text">
+        </div>
+        <div class="div">
+            <div>
+                <input class="btn" style="padding-right: 8em; padding-left: 7em;" id="clear" type="button" value="C" onclick="btnClear()">
+            </div>
+            <div>
+                <input class="btn" type="button" value="7" onclick="number('7')">
+                <input class="btn" type="button" value="8" onclick="number('8')">
+                <input class="btn" type="button" value="9" onclick="number('9')">
+                <input class="btn" type="button" value="*" onclick="number('*')">
+            </div>
+            <div>
+                <input class="btn" type="button" value="4" onclick="number('4')">
+                <input class="btn" type="button" value="5" onclick="number('5')">
+                <input class="btn" type="button" value="6" onclick="number('6')">
+                <input class="btn" type="button" value="-" onclick="number('-')">
+            </div>
+            <div>
+                <input class="btn" type="button" value="1" onclick="number('1')">
+                <input class="btn" type="button" value="2" onclick="number('2')">
+                <input class="btn" type="button" value="3" onclick="number('3')">
+                <input class="btn" style="font-size: 18px; padding-top: 1.83em; padding-bottom: 1.7em;" type="button" value="+" onclick="number('+')">
+            </div>
+            <div>
+                <input class="btn" type="button" value="0" onclick="number('0')">
+                <input class="btn" style="padding-left: 1.3em;" type="button" value="." onclick="number('.')">
+                <input class="btn" id="equal" type="button" value="=" onclick="btnEqual()">
+                <input class="btn" style="padding-right: 1.3em;" type="button" value="/" onclick="number('/')">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
